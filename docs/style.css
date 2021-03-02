@@ -1,0 +1,371 @@
+@font-face {
+    font-family: Roboto;
+    src: url("resources/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url("resources/fonts/Ubuntu/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+    font-family: Custom-Impact;
+    src: url("resources/fonts/Impact/impact.ttf");
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url("resources/fonts/Impact/unicode.impact.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #a6a6a6;
+    color: black;
+    font-family: Roboto;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    width: 100vw;
+}
+
+.content {
+    position: relative;
+    margin-bottom: 20vw;
+    max-width: 1500px;
+}
+
+header {
+    margin: 2vw;
+    font-size: 60px;
+    font-family: Impact;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    background-color: #3f3f3f;
+    width: 100vw;
+    height: 6vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+nav a {
+    color: white;
+    font-size: 20px;
+    margin: 40px;
+    width: 15%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: white;
+}
+
+nav a:hover {
+    animation-name: nav_a_hover;
+    animation-duration: 0.5s;
+    color: orange;
+    font-size: 30px;
+}
+
+footer {
+    background-color: #3f3f3f;
+    color: white;
+    width: 100vw;
+    height: 5vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+footer span {
+    width: 20vw;
+    margin-left: 40vw;
+    margin-right: 40vw;
+}
+
+footer a {
+    color: white;
+}
+
+#o_mnie {
+    width: 40%;
+    height: 20%;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    font-size: 30px;
+    padding: 1vw;
+    border: 2px solid black;
+    border-width: 5px;
+    border-style: dashed;
+    border-radius: 7px;
+    margin-bottom: 50px;
+}
+
+#wstep {
+    width: 40%;
+    position: relative;
+    top: 100px;
+    left: 50%;
+    font-size: 30px;
+    padding: 1vw;
+}
+
+#discord_bot {
+    width: 40%;
+    height: 10vw;
+    /* border: 2px solid black; */
+    position: relative;
+    top: 200px;
+    left: 50px;
+    font-size: 30px;
+    padding: 1vw;
+    margin-bottom: 200px;
+}
+
+#discorda {
+    color: black;
+}
+
+#discorda:hover {
+    animation: discorda;
+    animation-duration: 0.5s;
+    color: orange;
+    background-color: #3f3f3f;
+    border-radius: 5px;
+}
+
+.video {
+    width: 800px;
+    height: 500px;
+}
+
+#vid1 {
+    position: relative;
+    top: 200px;
+    left: 50px;
+    padding: 1vw;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+
+#vid1_text {
+    width: 40%;
+    position: relative;
+    top: 100px;
+    left: 50vw;
+    padding: 1vw;
+    font-size: 30px;
+}
+
+#vid2 {
+    position: relative;
+    top: 200px;
+    left: 50px;
+    padding: 1vw;
+    margin-right: 50px;
+}
+
+#vid2_text {
+    width: 40%;
+    position: relative;
+    top: 200px;
+    left: 50vw;
+    padding: 1vw;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+
+#kontakt_body {
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 407px;
+}
+
+#kontakt {
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+form {
+    margin: 0 auto;
+}
+
+section {
+    width: 100%;
+    height: 20vw;
+    margin-top: 5vw;
+    margin-bottom: 20vw;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+}
+
+#mail_wyslany {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 10vw;
+    left: 25%;
+    width: 50%;
+    color: black;
+    font-family: Ubuntu;
+    font-size: 50px;
+    margin-bottom: 30vw;
+}
+
+#blad {
+    color: red;
+    font-size: 50px;
+    font-family: Ubuntu;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+#przepraszamy {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Ubuntu;
+}
+
+#formularz {
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    margin-bottom: 10vw;
+}
+
+#wyslij_mi_email {
+    font-family: Arial;
+    font-size: 50px;
+}
+
+#wyslij_mi_email:hover {
+    animation-name: wyslij_email;
+    animation-duration: 0.5s;
+    color: orange;
+}
+
+.form_field {
+    color: black;
+    font-family: Ubuntu;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 1vw;
+}
+
+#tytul_wiadomosci {
+    width: 50%;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 2vw;
+}
+
+#tresc_wiadomosci {
+    width: 50%;
+    height: 20vw;
+    font-size: 20px;
+    text-align: left;
+}
+
+#email {
+    width: 50%;
+    height: 2vw;
+    font-size: 20px;
+}
+
+#send_button {
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Ubuntu;
+    font-size: 20px;
+    padding: 0.5vw;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 5vw;
+    height: 1vw;
+}
+
+#send_button:hover {
+    animation: send_button_animation;
+    animation-duration: 0.5s;
+    background-color: orange;
+}
+
+@keyframes nav_a_hover {
+    from {
+        color: white;
+        font-size: 20px;
+        margin: 40px;
+        width: 12.5%;
+    }
+    to {
+        color: orange;
+        font-size: 30px;
+    }
+}
+
+@keyframes wyslij_email {
+    from {
+        color: black;
+    }
+    to {
+        color: orange;
+    }
+}
+
+@keyframes send_button_animation {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: orange;
+    }
+}
+
+@keyframes discorda {
+    from {
+        color: black;
+    }
+    to {
+        color: orange;
+        background-color: #3f3f3f;
+    }
+}

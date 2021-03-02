@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Moje hobby | Maciej Gawłowski</title>
+
+    <meta name="author" content="Maciej Gawłowski">
+    <meta charset="utf-8">
+    <meta name="creation-date" content="12.02.2021">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Strona opisuje moje hobby/pasję, którą jest programowanie.">
+    <meta name="keywords" content="hobby, pasja, programowanie, ZSE, projekt">
+    <meta name="index" content="none">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="resources/pictures/nigersaurus3.jpg">
+</head>
+
+<body>
+    <header>
+        <p>Moje hobby - Programowanie</p>
+    </header>
+    <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="index.html">O mnie</a>
+        <a href="index.html">Bot</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <div id="kontakt_body">
+        <h1>Skontaktuj się ze mną pod adresem email:</h1>
+        <p id="kontakt">maciej.gawlowski@zse.krakow.pl</p>
+    </div>
+
+    <!-- <div id="formularz">
+        <h1 id="wyslij_mi_email">Wyślij mi email!</h1>
+        <form action="{% url 'stronka:contact' %}" method="POST" id="contactForm">
+            {% csrf_token %} {% for non_field_error in form.non_field.errors %}
+            <p>{{ non_field_error }}</p>
+            {% endfor %}
+
+            <div>
+                {% render_field form.subject maxlength="100" id="tytul_wiadomosci" class="form_field" placeholder="Tytuł Twojej wiadomości" %}
+            </div>
+            <div>
+                {% render_field form.content|attr:"cols:100"|attr:"rows:20" maxlength="1000" id="tresc_wiadomosci" class="form_field" placeholder="Treść Twojej wiadomości" %}
+            </div>
+            <div>
+                {% render_field form.contact_mail maxlength="100" id="email" class="form_field" placeholder="Twój email kontaktowy" %}
+            </div>
+            <button name="submit" id="send_button">Wyślij</button>
+        </form>
+    </div> -->
+    <footer>
+        <span><sup>&copy;</sup>Maciej Gawłowski 2021</span>
+    </footer>
+</body>
+
+</html>
